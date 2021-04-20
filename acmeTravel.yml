@@ -1,0 +1,44 @@
+swagger: "2.0"
+
+info:
+ version: "0.0.1"
+ title: ACME VACANTION API
+ description: This specification id for the ACME TRAVEL packages|
+              These specifications were used to teach the students how
+              to creare Swagger specifications for their REST API
+ contact:
+  name: Steve Jordache
+  url: www.dePulaSaMaiei.org
+  email: stevej@blabla.com
+
+ license:
+  name: GNU
+  url: http://dePulaSaMaiei.org
+
+host: localhost:3000
+basePath: /v1
+schemes:
+  - http
+  - https
+
+consumes:
+  - application/json
+#format of the responses to the client (Accepts)
+produces: 
+  - application/json
+
+tags:
+ - name : vacation
+   description: Refer to vacation packages that are offered by ACME Travel.
+
+ - name: hotels
+   description: Refer to the partner hotels through which ACEM offers vacantion.
+
+ - name: package
+   description : Same as vavantions. It refers to the vacantion package. 
+
+externalDocs:
+   description: This is an external doc
+   url: http://developer.dePUlaSaMaIei.org/docs
+   
+
